@@ -18,19 +18,19 @@ public:
 	{
 		if (age < 7) 
 		{
-			cout << name << " - ��� ����������!"; 
+			cout << name << " Child"; 
 		}
 		else if ((age >= 7) && (age <= 17))
 		{
-			cout << name << " - ��� ��������!"; 
+			cout << name <<" School"; 
 		}
 		else if (age >= 17 && age < 22)
 		{
-			cout << name << " - ��� �������!";
+			cout << name << " Student";
 		}
 		else if (age >= 22 && age < 60)
 		{
-			cout << name << " - ��� ��������! ";
+			cout << name << " Worker";
 		}
 	}
 };
@@ -38,13 +38,13 @@ public:
 int main()
 {
 	setlocale(LC_ALL, "RU");
-	Status Stas("Stas", 18);
+	Status Stas("Stas", 48);
 	Stas.Compare();
 
 	cout << endl;
 
-	Status Jkonst("�������", 35);
-	Jkonst.Compare();
+	Status Kirill("Kirill", 18);
+	Kirill.Compare();
 
 	return 0;
 }
