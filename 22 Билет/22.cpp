@@ -1,18 +1,19 @@
 #include <iostream>
 #include <time.h>
+using namespace std;
 
 float avr (float* arr, int size);
 
 int main(int argc, char const *argv[]){
     int size = 5;
     float *array = new float[size];
-    std::srand(static_cast<unsigned int>(time(nullptr)));
+    srand(static_cast<unsigned int>(time(nullptr)));
     for (int i = 0; i < size; i++){
         array[i] = rand() % 100 / 0.3;
-        std::cout << array[i] << " ";
+        cout << array[i] << " ";
     }
-    std::cout << "" << std::endl;
-    std::cout << "Avarage value: " << avr(array, size) << std::endl;
+    cout << "" << endl;
+    cout << "Avarage value: " << avr(array, size) << endl;
     return 0;
 }
 
