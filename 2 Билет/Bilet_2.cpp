@@ -37,7 +37,6 @@ public:
 
 int main()
 {
-	setlocale(LC_ALL, "RU");
 	Status Stas("Stas", 48);
 	Stas.Compare();
 
