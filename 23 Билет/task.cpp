@@ -10,7 +10,7 @@ class Employee
 
 private:
 
-    string FIO;
+    string Familya;
 
     int Staj;
 
@@ -26,7 +26,7 @@ public:
 
     {
 
-        this->FIO = FIO;
+        this->Familya = FIO;
 
         this->Staj = Staj;
 
@@ -42,7 +42,7 @@ public:
 
     {
 
-        cout << "FIO: " << FIO << endl;
+        cout << "FIO: " << Familya << endl;
 
         cout << "Staj: " << Staj << endl;
 
@@ -53,26 +53,6 @@ public:
         cout << "The cost of one hour of work: " << hourWork << endl;
 
         cout << endl;
-
-    }
-
-    void record()
-
-    {
-
-        ofstream file(FIO + ".txt");
-
-        file << "FIO: " << FIO << endl;
-
-        file << "Staj: " << Staj << endl;
-
-        file << "Position: " << position << endl;
-
-        file << "Hours: " << hours << endl;
-
-        file << "The cost of one hour of work: " << hourWork << endl;
-
-        file.close();
 
     }
 
@@ -89,10 +69,6 @@ int main()
     One.showInfo();
 
     Two.showInfo();
-
-    One.record();
-
-    Two.record();
-
+    
     return 0;
 }

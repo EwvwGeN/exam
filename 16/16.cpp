@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 using namespace std;
 
@@ -19,8 +19,8 @@ long double f(int N)
 
 int main()
 {
-    int N;
-    cin >> N;
+    int N = 9;
+
     cout << N << " = " << f(N) << endl << endl; // f(N) - функция для вычисления факториала.
     return 0;
 }
